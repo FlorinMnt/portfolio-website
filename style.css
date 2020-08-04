@@ -123,7 +123,7 @@ font-family: 'Poppins', sans-serif;
         height: 92vh;
         top: 8vh;
         background-color: #9e9a9a;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 50%;
@@ -139,6 +139,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .nav-active {
+    display: flex;
     transform: translate(0%);
 }
 
@@ -179,14 +180,6 @@ font-family: 'Poppins', sans-serif;
     background: black;
 }
 
-
-/*  @media screen and (max-width:850px) {
-    .firstSection {
-        display: flex;
-        font-size: x-small;
-    }
-} */
-
 .image {
     width: 100%;
     height: 100%;
@@ -198,7 +191,7 @@ font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 30%;
     right: 20%;
-    font-size: 5vw;
+    font-size: 5rem;
     transform: translate(-20%, -70%);
     color: rgb(255, 255, 255);
     font-family: 'Monsieur La Doulaise', cursive;
@@ -207,11 +200,33 @@ font-family: 'Poppins', sans-serif;
 .frontEnd {
     position: absolute;
     top: 40%;
-    left: 60%;
-    font-size: 3vw;
+    right: 20%;
+    font-size: 3rem;
     transform: translate(-20%, -70%);
     color: rgb(255, 255, 255);
     font-family: 'Monsieur La Doulaise', cursive;
+}
+
+@media screen and (max-width:1200px) {
+    .frontEnd {
+        font-size: 2.5rem;
+        right: 10%;
+    }
+    .im {
+        font-size: 4rem;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .frontEnd {
+        font-size: 2rem;
+        right: 5%;
+    }
+    .im {
+        font-size: 3rem;
+        right: 5%;
+    }
 }
 
 
