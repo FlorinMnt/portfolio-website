@@ -11,73 +11,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&family=PT+Serif+Caption:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="style.css">
+
     <title>Florin CV</title>
 </head>
 
 <body>
     <nav class="navbar">
-
-
+        <!-- logo -->
         <div>
             <a class="florin" href="#florin">Florin</a>
         </div>
 
-
+        <!--navigation -->
 
         <ul class="navLinks">
             <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#cv">Cv</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
 
-
+        <!-- burger  -->
 
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-
-
-
     </nav>
 
-
+    <!-- first section -->
 
     <section id="florin">
-        <p class="im">I'm Florin,</p>
-        <p class="frontEnd"> a Front-End Developer.</p>
-        <img class="image" src="images/grayscale-photo.png" alt="laptop with code">
+        <p class="im">Hello I'm <span class="spanFlorin">Florin</span>,</p>
+        <p class="frontEnd"> a front-end developer.</p>
+        <!-- <img class="image" src="images/Night and Day.png" alt="blue screen"> -->
     </section>
 
 
-
+    <!-- about section -->
 
     <section id="about">
-        <h1>About</h1>
-        <p class="hello">Hello !</p>
-        <p class="description">I am a junior in programming,based in Craiova, Romania. I'm trained in front end programming languages.</p>
+        <div class="aboutText">
+            <h1>About me</h1>
+            <p>I am a beginner in front-end programming, with a great desire to learn.</p>
+            <p>My background is a 6 month programming course, graduated at the <a class="scoalaInformala" href="https://scoalainformala.ro/craiova/?gclid=EAIaIQobChMI3srWt52G6wIVXhV7Ch1JNQyXEAAYASAAEgJARvD_BwE">  Scoala informala de IT,  </a> Craiova,in
+                2020.
+            </p>
+            <p>When it comes to commitments, I like seriousness.</p>
+        </div>
     </section>
+    <!-- skills section -->
+    <section id="skills">
+        <div class="particularSkills">
+            <p>I have a particular set of <span class="particularSpan">Skills</span>,that make me a grate coder</p>
 
-    <section id="work">
-        <h1>Work</h1>
-        <p class="hello">Hello !</p>
-        <p class="description">I am a junior in programming,based in Craiova, Romania. I'm trained in front end programming languages.</p>
+        </div>
+        <div class="container">
+            <!-- <h1>Skills</h1> -->
+            <div class="bar back intermediate" data-skill="javascript"></div>
+            <div class="bar front advanced" data-skill="css"></div>
+            <div class="bar front2 expert" data-skill="html"></div>
+        </div>
+
+
     </section>
+    <!-- portfolio section -->
+    <section id="portfolio">
+        <h1 class="portfolioHeading">Portfolio</h1>
 
-    <section id="cv">
-        <h1>Cv</h1>
-        <p class="hello">Hello !</p>
-        <p class="description">I am a junior in programming,based in Craiova, Romania. I'm trained in front end programming languages.</p>
     </section>
-
+    <!-- contact section -->
     <section id="contact">
         <h1>Contact</h1>
-        <p class="hello">Hello !</p>
-        <p class="description">I am a junior in programming,based in Craiova, Romania. I'm trained in front end programming languages.</p>
+
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/FlorinMnt"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="footer">
+            <p>salut</p>
+        </div>
     </section>
+
 
 
 
