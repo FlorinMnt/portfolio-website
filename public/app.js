@@ -1,23 +1,28 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.navLinks');
-    const navLinks = document.querySelectorAll('.navLinks li ')
+    const navLinks = document.querySelectorAll('.navLinks li ');
+    const aTagClick = document.querySelector('.aTag');
+    const navHide = document.querySelector("#hide");
 
     burger.addEventListener('click', () => {
         //Toggle Nav
-        nav.classList.toggle('nav-active');
-
-        //Animate Link
+        nav.classList.toggle('open');
+        navLinks.forEach(link => {
+                link.classList.toggle("fade");
+            })
+            //Animate Link
         navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
+            if (link.animation) {
+                link.animation = '';
             } else {
-                link.style.animation = `navLinksFade 0.5s ease forwards ${index / 7 + 0.6}s`;
+                link.animation = `navLinksFade 0.5s ease forwards ${index / 7 + 0.6}s`;
             }
         });
         //Burger Animation
-        burger.classList.toggle('toggle')
+        burger.classList.toggle('toggle');
     });
+
 }
 navSlide();
 window.onscroll = function() { myFunction() };
@@ -29,7 +34,7 @@ function myFunction() {
     document.getElementById("myBar").style.width = scrolled + "%";
 }
 // Your web app's Firebase configuration
-var firebaseConfig = {
+/* var firebaseConfig = {
     apiKey: "AIzaSyCl3qbX7QbRFB5ee8-08wLz4lPF5fQcUlA",
     authDomain: "munteanu-florin-web-app.firebaseapp.com",
     databaseURL: "https://munteanu-florin-web-app.firebaseio.com",
@@ -41,4 +46,4 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+firebase.analytics(); */
