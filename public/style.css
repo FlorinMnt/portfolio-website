@@ -62,7 +62,8 @@
         align-items: center;
         height: 10vh;
         width: 100%;
-        background-color: #244094;
+        background-color: rgb(49, 134, 199);
+        border-bottom: 1px solid;
         font-family: 'Poppins', sans-serif;
     }
     
@@ -240,7 +241,7 @@
     }
     
     .florinSection3 {
-        background-color: blue;
+        background-color: transparent;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 50px;
