@@ -16,9 +16,15 @@
     /* body */
     
     body {
-        line-height: 1.6;
-        height: 100%;
+        /* line-height: 1.6;
+        height: 100%; */
         margin: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
     /* end body */
     /* sections */
@@ -31,8 +37,7 @@
     }
     /* end sections */
     /* progress bar */
-    
-    .progress-container {
+    /*   .progress-container {
         margin: 0;
         top: 0;
         position: fixed;
@@ -43,25 +48,20 @@
     .progress-bar {
         height: 6px;
         background: #00296B;
-    }
+    } */
     /* end progress bar */
     /* navigation bar */
     
     nav {
-        position: fixed !important;
+        position: fixed;
         top: 0;
         z-index: 2;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         background-color: rgba(59, 58, 58, 0.6);
         font-family: 'Poppins', sans-serif;
-        transition: 1s;
-    }
-    
-    nav.hide {
-        transform: translate(-100%);
     }
     
     .logo {
@@ -74,9 +74,6 @@
         background-color: #00296B;
         margin-left: 30px;
     }
-    /*  .logo:hover {
-        transform: scale(2.05);
-    } */
     
     .aTagLogo {
         text-transform: uppercase;
@@ -88,28 +85,17 @@
     .aTagLogo:hover {
         text-decoration: none;
         color: #FDC500;
-        /*  transform: scale(0.3); */
     }
     
     .navLinks {
         display: flex;
-        list-style: none;
         justify-content: space-around;
         align-items: center;
-        width: 30%;
+        margin: 0;
+        padding: 0;
         height: 100%;
-        margin-left: auto;
+        width: 30%;
     }
-    /*   .navLiHide {
-        top: 0;
-        z-index: 2;
-        display: flex;
-        height: 10vh;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        font-family: 'Poppins', sans-serif;
-    } */
     
     .li {
         list-style: none;
@@ -121,7 +107,7 @@
     }
     
     .aTag {
-        color: #FDC500;
+        color: #00296B;
         text-decoration: none;
         letter-spacing: 2px;
         font-size: 16px;
@@ -135,79 +121,78 @@
         transform: scale(0.5);
     }
     
-    .navLiHide {
+    .burger {
         display: none;
+        cursor: pointer;
+        z-index: 2;
+        right: 5%;
+        top: 50%;
+        border-radius: 10px;
     }
     
-    @media screen and (max-width:1024px) {
-        /*        body {
+    .line {
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    
+    @media screen and (max-width:554px) {
+        body {
+            margin: 0;
+            max-width: 100%;
             overflow-x: hidden;
-        } */
-        nav {
-            position: relative;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
         }
         .navLinks {
-            position: fixed;
-            height: 100vh;
-            background-color: rgba(39, 38, 38, 0.4);
             display: flex;
-            justify-content: space-evenly;
+            position: absolute;
+            top: 6vh;
+            right: 0;
+            height: 44vh;
+            background-color: #FDC500;
             width: 100%;
             flex-direction: column;
-            transition: all 1s ease-out;
-            clip-path: circle(100px at 50% 10%);
-            -webkit-clip-path: circle(100px at 50% 10%);
-            pointer-events: none;
-        }
-        .navLinks.open {
-            clip-path: circle(1000px at 50% 10%);
-            -webkit-clip-path: circle(1000px at 50% 10%);
-            pointer-events: all;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
         }
         .li {
-            opacity: 0;
-        }
-        .aTag {
-            font-size: 17px;
-        }
-        .li:nth-child(1) {
-            margin-top: 500px;
-            font-weight: bolder;
-            transition: all 0.5s ease 0.2s;
-        }
-        .li:nth-child(2) {
-            margin-bottom: 100px;
-            font-weight: bolder;
-            transition: all 0.5s ease 0.4s;
-        }
-        .li.fade {
+            margin: 0;
+            padding: 0;
             opacity: 1;
         }
         .burger {
-            /* display: block; */
-            position: absolute;
+            display: block;
             cursor: pointer;
             z-index: 2;
             right: 5%;
             top: 50%;
-            transform: translate(-5%, -50%);
+            border-radius: 10px;
         }
         .line {
             width: 25px;
-            height: 4px;
+            height: 3px;
             background: white;
             margin: 5px;
         }
     }
     
+    .active {
+        transform: translateX(0%);
+    }
+    
     @keyframes navLinksFade {
         from {
             opacity: 0;
-            transform: translate(50px);
+            transform: translateX(50px);
         }
         to {
             opacity: 1;
-            transform: translate(0px);
+            transform: translateX(0px);
         }
     }
     
@@ -249,6 +234,15 @@
     }
     
     @media screen and (max-width:1024px) {
+        body {
+            margin: 0;
+            max-width: 100%;
+            overflow-x: hidden;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
         #florinSection::before {
             background-position: center;
             background-repeat: no-repeat;
@@ -264,6 +258,15 @@
     }
     
     @media screen and (max-width:350px) {
+        body {
+            margin: 0;
+            max-width: 100%;
+            overflow-x: hidden;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
         #florinSection::before {
             background-position: center;
             background-repeat: no-repeat;
@@ -529,7 +532,7 @@
     .personalInfo {
         flex: 0 0 50%;
         max-width: 50%;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     .infoItem {
@@ -588,7 +591,7 @@
     .personalSkills {
         flex: 0 0 50%;
         max-width: 50%;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     .skillsItems {
@@ -597,7 +600,7 @@
     }
     
     .skillsItems h5 {
-        line-height: 30px;
+        /*  line-height: 20px; */
         font-weight: 400;
         padding: 10px 0;
         font-size: 16px;
