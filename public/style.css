@@ -13,9 +13,9 @@
     --first-color-light: #EAE7E6;
     --first-color-lighten: #FFFAEA; */
     --first-color: #00296b;
-    --first-color-dark: #b3001b;
-    --first-color-darken: #990a16;
-    --text-color: #27187e;
+    --first-color-dark: #a31621;
+    --first-color-darken: #d1462f;
+    --text-color: #091540;
     --first-color-light: #EAE7E6;
     --first-color-lighten: #FFFAEA;
     /* font and text */
@@ -213,7 +213,7 @@ img {
 /* active menu */
 
 .active {
-    color: var(--text-color);
+    color: #d1462f;
 }
 
 
