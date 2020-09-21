@@ -15,7 +15,7 @@
     --first-color: #00296b;
     --first-color-dark: #b3001b;
     --first-color-darken: #990a16;
-    --text-color: #0496ff;
+    --text-color: #27187e;
     --first-color-light: #EAE7E6;
     --first-color-lighten: #FFFAEA;
     /* font and text */
@@ -151,6 +151,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav_logo {
+    font-weight: var(--font-bold);
 }
 
 .nav_menu {
