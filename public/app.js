@@ -1,51 +1,41 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.navLinks');
-    const navLinks = document.querySelectorAll('.navLinks li ');
+/* menu show/hidden */
+const navMenu = document.getElementById('nav-menu');
+const toggleMenu = document.getElementById('nav-toggle');
+const closeMenu = document.getElementById('nav-close');
 
+toggleMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('show');
+});
+/* remove menu */
+const navLink = document.querySelectorAll('.nav_link');
 
-    burger.addEventListener('click', () => {
-        //Toggle Nav
-        nav.classList.toggle('active');
-        //Animate Link
-        navLinks.forEach((link, index) => {
-                if (link.animation) {
-                    link.animation = '';
-                } else {
-                    link.animation = `navLinksFade 0.5s ease forwards $(index/7 + 0.3)s`;
-                }
-            })
-            //Burger Animation
-        burger.classList.toggle('toggle');
+function linkAction() {
+    navMenu.classList.remove('show');
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+/* scroll section */
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', scrollActive);
+
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav_menu a[href*=' + sectionId + ' ]').classList.add('active');
+        } else {
+            document.querySelector('.nav_menu a[href*=' + sectionId + ' ]').classList.remove('active');
+        }
     });
-
 }
-navSlide();
-window.onscroll = function() { myFunction() };
-
-function myFunction() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-}
-/* const navScroll = document.querySelector('nav');
-let prevScrollPos = window.pageYOffset;
-
-window.addEventListener('scroll', () => {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollPos < currentScrollPos) {
-        navScroll.classList.add('hide');
-    } else {
-        navScroll.classList.remove('hide');
-    }
-    prevScrollPos = currentScrollPos;
-}); */
-
-
-
-
-
 
 
 

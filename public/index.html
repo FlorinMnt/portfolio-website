@@ -4,8 +4,8 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
 
@@ -22,271 +22,237 @@
 
 <body>
 
-    <!--  <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div> -->
-    <!-- first section -->
-    <nav>
-
-
-        <!-- logo -->
-        <div class="logo">
-            <a class="aTagLogo" href="#florinSection">Florin</a>
-        </div>
-
-        <!--navigation -->
-
-        <ul class="navLinks ">
-            <li class="li"><a class="aTag" href="#about">ABOUT & SKILLS</a></li>
-            <li class="li"><a class="aTag" href="#contact">GET IN TOUCH</a></li>
-        </ul>
-
-        <!-- burger  -->
-
-        <div class="burger">
-            <div class="line1 line"></div>
-            <div class="line2 line"></div>
-            <div class="line3 line"></div>
-        </div>
-    </nav>
-
-    <!-- florin  section -->
-
-    <section id="florinSection">
-        <div class="florinSection2">
-            <div class="florinSection3">
-                <h1 class="im">Hello, I'm <span class="spanFlorin">Florin</span>.<span class="reveal1"></span></h1>
-                <h1 class="frontEnd"> I'm a front-end web developer <span class="reveal"></span></h1>
+    <!-- header -->
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fas fa-landmark"></i>
             </div>
-        </div>
-    </section>
 
-    <!-- end first section -->
-    <!-- about section -->
+            <div>
+                <a href="#" class="nav_logo">FLORIN</a>
+            </div>
 
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="sectionAbout pad">
-                    <h2>About Me</h2>
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main class="main-1">
+        <!-- home -->
+        <section class="home" id="home">
+            <div class="home_container bd-grid">
+                <div class="home_data">
+                    <div class="home_img">
+                        <img src="images/PHOTO-2020-09-17-11-32-49.jpg" alt="">
+                    </div>
+                    <h1 class="home_title">Florin Munteanu</h1>
+                    <span class="home_profession">Front-End Web Developer</span>
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/feed/" class="home_social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/FlorinMnt" class="home_social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a download="" href="#" class="button home_button">Download CV</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="aboutContent pad">
-                    <div class="row">
-                        <div class="aboutText pad">
-                            <div class="textDiv">
-                                <h3>My name is Munteanu Florin,</h3>
-                                <p class="beginner">I am a beginner in front-end programming, with a great desire to learn. My background is a programming course, graduated at the <a class="scoalaInformala" href="https://scoalainformala.ro/craiova/?gclid=EAIaIQobChMI3srWt52G6wIVXhV7Ch1JNQyXEAAYASAAEgJARvD_BwE">  Scoala Informala de IT Craiova</a>,in
-                                    2020.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row3">
-                        <div class="personalInfo pad">
-                            <div class="row2">
-                                <div class="infoItem pad">
-                                    <p>Age:<span>33</span></p>
-                                </div>
-                                <div class="infoItem pad">
-                                    <p>Website:<span>www.florinmunteanu.cf</span></p>
-                                </div>
-                                <div class="infoItem pad">
-                                    <p>Email:<span>munteanu.r.romulus@gmail.com</span></p>
-                                </div>
-                                <div class="infoItem pad">
+        </section>
+        <!-- about -->
+        <section class="about section" id="about">
+            <!-- <span class="section-subtitle">My intro</span> -->
+            <h2 class="section-title">About Me</h2>
 
-                                    <p>Country:<span>Romania</span></p>
-                                </div>
-                                <div class="infoItem pad">
-                                    <p>City:<span>Craiova</span></p>
-                                </div>
-                                <div class="infoItem pad">
-                                    <p>Phone:<span>0040722703918</span></p>
-                                </div>
-                                <div class="infoItem pad">
-                                    <p>Languages:<span class="langSpan">English,Italian,Spanish</span></p>
-                                </div>
-                            </div>
+            <div class="about_container bd-grid">
+                <div class="about_data">
+                    <p class="about_description">Hello,I am a beginner in Front-End web development, with a great desire to learn</p>
+                    <img src="images/ed36fd5b-3fa9-4a13-bc40-682dd3488ba4.JPG" alt="" class="about_img">
+                </div>
+                <div>
+                    <div class="about_information">
+                        <h3 class="about_information-title">Information</h3>
+
+                        <div class="about_information-data">
+                            <i class="far fa-user about_information-icon"></i>
+                            <span>Florin Munteanu</span>
                         </div>
 
-                        <div class="personalSkills pad">
-                            <div class="row">
-                                <div class="skillsItems pad">
-                                    <h5>javascript</h5>
-                                    <div class="progressBarDiv">
-                                        <div class="progressIn progressJava"></div>
-                                        <div class="skillPercent">40%</div>
-                                    </div>
-                                </div>
-                                <div class="skillsItems pad">
-                                    <h5>html</h5>
-                                    <div class="progressBarDiv">
-                                        <div class="progressIn progressHtml"></div>
-                                        <div class="skillPercent">60%</div>
-                                    </div>
-                                </div>
-                                <div class="skillsItems pad">
-                                    <h5>css</h5>
-                                    <div class="progressBarDiv">
-                                        <div class="progressIn progressCss"></div>
-                                        <div class="skillPercent">60%</div>
-                                    </div>
-                                </div>
-                                <div class="skillsItems pad">
-                                    <h5>React</h5>
-                                    <div class="progressBarDiv">
-                                        <div class="progressIn progressReact"></div>
-                                        <div class="skillPercent">20%</div>
-                                    </div>
-                                </div>
-                                <div class="skillsItems pad">
-                                    <h5>Node.Js</h5>
-                                    <div class="progressBarDiv">
-                                        <div class="progressIn progressNode"></div>
-                                        <div class="skillPercent">20%</div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="about_information-data">
+                            <i class="fas fa-mobile-alt about_information-icon"></i>
+                            <span>0040722703918</span>
+                        </div>
+
+                        <div class="about_information-data">
+                            <i class="far fa-envelope about_information-icon"></i>
+                            <span>munteanu.r.romulus@gmail.com</span>
                         </div>
                     </div>
-                    <div class="aboutBtn">
-                        <div class="aboutButton pad">
-                            <a href="#" class="btn1">Download CV</a>
+                    <div class="about_information">
+                        <h3 class="about_information-title">Experience</h3>
+
+                        <div class="about_information-data">
+                            <i class="fas fa-medal about_information-icon"></i>
+                            <div>
+                                <span class="about_information-subtitle">1 Year Training</span>
+                                <span class="about_information-subtitle-small">Experience</span>
+                            </div>
                         </div>
+
+                        <div class="about_information-data">
+                            <i class="fas fa-briefcase about_information-icon"></i>
+                            <div>
+                                <span class="about_information-subtitle">First Project</span>
+                                <span class="about_information-subtitle-small">Completed</span>
+                            </div>
+                        </div>
+
+                        <!--           <div class="about_information-data">
+                            <i class="fas fa-info-circle about_information-icon"></i>
+                            <div>
+                                <span class="about_information-subtitle">Support</span>
+                                <span class="about_information-subtitle-small">Online 24/7</span>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- skills -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Expertise Area</h2>
+            <div class="skills_container bd-grid">
+                <div class="skills_content">
+                    <h3 class="skills_subtitle">Frontend</h3>
+
+                    <div class="skills_data">
+                        <span class="skills_name">Html / Css</span>
+                        <span class="skills_number">80%</span>
+                        <span class="skills_bar skills_html"></span>
+                    </div>
+
+                    <div class="skills_data">
+                        <span class="skills_name">Javascript</span>
+                        <span class="skills_number">40%</span>
+                        <span class="skills_bar skills_js"></span>
+                    </div>
+
+                    <div class="skills_data">
+                        <span class="skills_name">React</span>
+                        <span class="skills_number">30%</span>
+                        <span class="skills_bar skills_react"></span>
+                    </div>
+                </div>
+                <div class="skills_content">
+                    <h3 class="skills_subtitle">Backend</h3>
+
+                    <div class="skills_data">
+                        <span class="skills_name">Node Js</span>
+                        <span class="skills_number">20%</span>
+                        <span class="skills_bar skills_node"></span>
                     </div>
 
                 </div>
             </div>
-            <div class="row">
-                <div class="education pad">
-                    <h3 class="titleEducation">Education</h3>
-                    <div class="row">
-                        <div class="timelineBox pad">
-                            <div class="timeline shadow">
-                                <div class="timelineItem">
-                                    <h6 class="timelineDate">
-                                        <i class="far fa-calendar-alt"></i>2018-2019
-                                    </h6>
-                                    <h4 class="timelineTitle">Entrepreneurship and Innovation</h4>
-                                    <p class="timelineText">A helpful experience where I understood even better the process of creating opportunities and taking risks.</p>
-                                </div>
-                                <div class="timelineItem">
-                                    <h6 class="timelineDate">
-                                        <i class="far fa-calendar-alt"></i>2019-2020
-                                    </h6>
-                                    <h4 class="timelineTitle">Web Development </h4>
-                                    <p class="timelineText">One of the best thing I've done in terms of self-development.</p>
-                                    <p class="timelineText">A field full of challenges and interesting teachings.</p>
-                                </div>
-                            </div>
-                        </div>
+        </section>
+        <!-- education -->
+        <section class="education section">
+            <!--             <span class="section-subtitle">Qualification</span> -->
+            <h2 class="section-title">Education</h2>
+            <div class="education_container bd-grid">
+                <div class="education_content">
+                    <div>
+                        <h3 class="education_year">2018-2019</h3>
+                        <span class="education_training">Entrepreneurship and Regional Development</span>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_rounder"></span>
+                        <span class="education_line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education_race"> Diploma in Entrepreneurship</h3>
+                        <span class="education_training">Small Businesses</span>
                     </div>
                 </div>
-                <div class="experience pad">
-                    <h3 class="titleExperience">Experience</h3>
-                    <div class="row">
-                        <div class="timelineBox pad">
-                            <div class="timeline shadow">
-                                <div class="timelineItem">
-                                    <h6 class="timelineDate">
-                                        <i class="far fa-calendar-alt"></i>2018-2019
-                                    </h6>
-                                    <h4 class="timelineTitle">Entrepreneurship </h4>
-                                    <p class="timelineText">Experience in developing my own business within the entrepreneurship program.</p>
-                                </div>
-                                <div class="timelineItem">
-                                    <h6 class="timelineDate">
-                                        <i class="far fa-calendar-alt"></i>2019-2020
-                                    </h6>
-                                    <h4 class="timelineTitle">Web Development</h4>
-                                    <p class="timelineText">A field in which I have not yet finished learning and I think that's what it's about. Always something new to learn.</p>
-                                    <p class="timelineText">The first experience was creating my own site www.florinmunteanu.cf.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="education_content">
+                    <div>
+                        <h3 class="education_year">2019-2020</h3>
+                        <span class="education_training">Front-End Web Development</span>
+                    </div>
+
+                    <div class="education_time">
+                        <span class="education_rounder"></span>
+                        <span class="education_line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education_race"> Diploma in Web Development</h3>
+                        <span class="education_specialty">Front-End/UI</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end about section -->
-    <!-- contact section -->
-    <section class="contactSection" id="contact">
-        <div class="contactContainer">
-            <div class="row rowContact">
-                <div class="contactInfo pad">
-                    <div class="iconPhone"> <i class="fas fa-mobile-alt"></i></div>
-                    <h4>Call Me</h4>
-                    <p>0040722703918</p>
-                </div>
-                <div class="contactInfo pad">
-                    <div class="iconPhone"> <i class="fas fa-map-pin"></i></div>
-                    <h4>Address</h4>
-                    <p>Romania,Craiova</p>
-                    <p>43 N.Titulescu Dolj 200118</p>
-                </div>
-                <div class="contactInfo pad">
-                    <div class="iconPhone"> <i class="fas fa-envelope"></i></div>
-                    <h4>Email Me</h4>
-                    <p>munteanu.r.romulus@gmail.com</p>
-                </div>
-            </div>
-            <!-- Contact form -->
-            <div class="row">
-                <form name="responsiveForm" class="contactForm pad" netlify>
-                    <div class="row">
-                        <div class="formItem  col pad">
-                            <div class="formGroup pad">
-                                <input name="name" type="text" class="formControl" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="formItem  col pad">
-                            <div class="formGroup pad">
-                                <input name="email" type="text" class="formControl" placeholder="Email">
-                            </div>
-                        </div>
+        </section>
+        <!-- contact -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact_container bd-grid">
+                <form class="contact_form">
+                    <div class="contact_inputs">
+                        <input type="text" name="name" placeholder="Name" class="contact_input">
+                        <input type="mail" name="email" placeholder="Email" class="contact_input">
                     </div>
-                    <div class="row">
-                        <div class="formItem col2 pad">
-                            <div class="formGroup pad">
-                                <input name="subject" type="text" class="formControl" placeholder="Subject">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="formItem col2 pad">
-                            <div class="formGroup pad">
-                                <textarea name="message" class="textareaForm" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rowBtn2">
-                        <div class="formItem  pad">
-                            <button type="submit" class="btn2">Send Message</button>
-                        </div>
-                    </div>
+                    <input type="text" name="subject" placeholder="Subject" class="contact_input">
+                    <textarea name="message" id="" placeholder="Message" cols="0" rows="10" class="contact_input"></textarea>
+                    <input type="submit" name="button" class="button contact_button">
                 </form>
-                <footer class="footer">
-                    <div class="footerDiv">
-                        <div class="social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.linkedin.com/in/munteanu-romulus-0607ba175/"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/FlorinMnt"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="copyRight">
-                            <p>Created by Munteanu Florin <i class="far fa-copyright"></i> 2020 All rights reserved</p>
-                        </div>
+                <div class="">
+                    <div class="contact_info">
+
+                        <h3 class="contact_subtitles"><i class="fas fa-mobile-alt about_information-icon"></i>Call Me</h3>
+                        <span class="contact_text">0040722703918</span>
                     </div>
-                </footer>
+                    <div class="contact_info">
+
+                        <h3 class="contact_subtitles"><i class="far fa-envelope about_information-icon"></i>Email Me</h3>
+                        <span class="contact_text">munteanu.r.romulus@gmail.com</span>
+                    </div>
+
+                    <div class="contact_info ">
+
+                        <h3 class="contact_subtitles "><i class="fas fa-street-view about_information-icon"></i>Location</h3>
+                        <span class="contact_text ">N.Titulescu 43</span>
+                        <span class="contact_text">Craiova-Romania</span>
+
+                    </div>
+
+                </div>
             </div>
+        </section>
+
+    </main>
+    <footer class="footer section">
+        <div class="footer_container bd-grid">
+            <h1 class="footer_title">Florin Munteanu</h1>
+            <p class="footer_description">Project made by Florin Munteanu</p>
+            <div class="footer_social">
+                <a href="https://www.facebook.com/mntf1" class="footer_link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/m.r.florin/" class="footer_link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer_copy"><i class="far fa-copyright"></i>2020</p>
         </div>
-
-
-    </section>
-
+    </footer>
 
 
 
