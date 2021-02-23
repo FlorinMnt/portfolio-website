@@ -424,7 +424,7 @@ img {
 .education_year,
 .education_race {
     font-size: var(--h3-font-size);
-    margin-bottom: .25rem;
+    margin-bottom: 5rem;
 }
 
 .eduction_training,
@@ -436,6 +436,7 @@ img {
 .education_year,
 .eduction_training {
     text-align: right;
+    margin-right: 5rem;
 }
 
 .education_time {
